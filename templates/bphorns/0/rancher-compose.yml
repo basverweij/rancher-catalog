@@ -14,6 +14,24 @@
       options:
         - develop
         - master
+      default: master
+    - variable: HTTPS_TYPE
+      label: Https type
+      type: enum
+      options:
+        - off
+        - on
+        - only
+      default: only
+    - variable: AUTH_TYPE
+      label: Authentication type
+      type: enum
+      options:
+        - none
+        - log
+        - simple
+        - auth
+      default: none
       
 bphorns-web:
   scale: 1
