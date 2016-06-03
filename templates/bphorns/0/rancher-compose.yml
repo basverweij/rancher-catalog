@@ -1,0 +1,19 @@
+.catalog:
+  name: B/PHorns Website
+  version: v0.1.0
+  questions:
+    - variable: HOSTNAMES
+      label: Hostnames
+      description: Comma-separated list of hostnames
+      type: string
+      required: true
+      default: www.bphorns.nl,bphorns.nl
+    - variable: IMAGE_VERSION
+      label: Image version
+      type: enum
+      options:
+        - develop
+        - master
+      
+bphorns-web:
+  scale: 1

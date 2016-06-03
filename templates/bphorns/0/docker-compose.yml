@@ -1,0 +1,9 @@
+bphorns-web:
+  restart: always
+  labels:
+    com.off-sync.platform.proxy.hostnames: ${HOSTNAMES}
+    com.off-sync.platform.proxy.name: bphorns_web
+    com.off-sync.platform.proxy.https: only
+    com.off-sync.platform.proxy.auth: log
+  tty: true
+  image: registry.off-sync.net/bphorns/web-site:${IMAGE_VERSION}
