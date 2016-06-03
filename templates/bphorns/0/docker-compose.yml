@@ -2,8 +2,7 @@ bphorns-web:
   restart: always
   labels:
     com.off-sync.platform.proxy.hostnames: ${HOSTNAMES}
-    com.off-sync.platform.proxy.name: bphorns_web
+    com.off-sync.platform.proxy.name: bphorns_web_site
     com.off-sync.platform.proxy.https: ${HTTPS_TYPE}
     com.off-sync.platform.proxy.auth: ${AUTH_TYPE}
-  tty: true
   image: registry.off-sync.net/bphorns/web-site:${IMAGE_VERSION}
